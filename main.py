@@ -16,5 +16,22 @@ class Calculator:
     def multiply(self):
         return self.num1 * self.num2
 
+    def select_operation(self):
+        print("Select operation:")
+        print("1. Addition")
+        print("2. Subtraction")
+        print("3. Multiplication")
+
+        choice = input("Enter choice (1/2/3): ")
+
+        if choice == '1':
+            return self.add()
+        elif choice == '2':
+            return self.subtract()
+        elif choice == '3':
+            return self.multiply()
+        else:
+            return "Invalid choice"
+
 if __name__ == '__main__':
     pass
