@@ -34,4 +34,7 @@ class Calculator:
             return "Invalid choice"
 
 if __name__ == '__main__':
-    pass
+    calculator = Calculator()
+    calculator.get_numbers()
+    result = calculator.select_operation()
+    print("Result:", result)
